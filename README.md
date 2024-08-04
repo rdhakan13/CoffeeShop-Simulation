@@ -1,8 +1,10 @@
 # CoffeeShop-Simulation
 
+## Introduction
+
 The purpose of this code is to simulate the operations of a coffee shop for a select number of months as inputted by the user. The coffee shop has fixed demand for each of the coffee type it sells, which require set ingredients and labour hours from set number of baristas. The goal of the coffee shop is to make a profit and avoid going bankrupt.
 
-### Code Design
+## Code Design
 The code contains 5 classes and 1 main file through which the code will run. The 5 classes are as such:
 1. `Supplier` - this class stores the following attributes of a supplier: name, price per quantity for each of the three ingredients (milk, beans and spices). The methods in this class retrieve the attribute values. 
 2. `Barista` - this class stores the following attributes of a barista: name, coffee type in which they have speciality, hours they work, hours paid for and the rate per hour. The methods in this class can: retrieve all the attribute values, set values for name and speciality and increase/reset the number of hours worked.
@@ -12,7 +14,7 @@ The code contains 5 classes and 1 main file through which the code will run. The
 
 The design of the code was to ensure minimal coding takes place within the main.py file so that the high level logic can be simply presented and understood.
 
-### About the program
+## About the program
 The program runs as such:
 - Prompts user to enter coffee shop name
 - Prompts user to enter the number of months to simulate, if no response is given then a default value of 6 is taken
@@ -27,7 +29,7 @@ The program has been extended in 2 ways to aid the decision making of the user s
 1. Barista's who have speciality in coffee making can prepare the speciality in half the required preparation time of that coffee, therefore, saving labour hours
 2. Coffee types are arranged via the maximise_income method in the CoffeeShop class which sorts the coffee types based most income generating per unit of preparation time to the least and therefore addresses the time limitation posed by the number of baristas hired. This makes the user prioritize the demands of coffee and also hires baristas with specialities accordingly.
 
-### How to run the program
+## How to run the program
 To run the simulation, first open the terminal and navigate to the directory the folder. Then type the below line:
 ```
 python main.py
